@@ -1,0 +1,108 @@
+/* selectelement{
+    add style property: value;
+ }  */
+
+body{
+font-family: arial, sans-serif;
+margin: 0;
+padding: 20px;
+}
+
+#home-text{
+ color:#300 ;
+ text-align: center; 
+ padding: 20px;  
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav-item a {    
+}
+
+.nav-item a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn{
+    color: #fff;
+    background-color: #300;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+#home{
+    display: flex;
+}
+
+#home-img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about{
+    padding: 50px;
+    background-color: rgb(207, 212, 228);
+    text-align: center;
+}
+
+.project-card{
+    width: 180px;
+    height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card img{
+    width: 100px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.project-card h3{
+    font-size: 18px;
+}
+
+.project-card div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.project-card p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#grid-container{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+}
+
+#message-item{
+    
+}
+
+.form-item{
+    text-align: right;
+    text-decoration: underline;
+    font-family: italic;
+    
+}

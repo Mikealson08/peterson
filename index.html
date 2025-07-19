@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/main.css">
     <title>Michael Portfolio</title>
 </head>
 <body>
@@ -10,10 +11,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#work">Work</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -21,14 +22,14 @@
     <!-- main part -->
 <main>
     <section id="home">
-        <div>
-            <h2>Michael Portfolio</h2>
+        <div id="home-text">
+            <h2>Welcome to michael portfolio</h2>
             <p>I am a web developer based in lagos, I love working on innovative project and colaboration</p>
+            <button class="btn">Download CV</button>
+        <button class="btn">Let's Talk</button>
         </div>
-        <button>Download CV</button>
-        <button>Let's Talk</button>
         <div>
-            <img src="./images/developer.jpeg" alt="michael picture">
+            <img id="home-img" src="./images/developer.jpeg" alt="michael picture">
         </div>
     </section>
     <section id="about">
@@ -37,6 +38,39 @@
     </section>
     <section id="work">
         <h2>My Work</h2>
+        <p>Here are my top projects. you can check them out</p>
+
+        <!-- project card -->
+         <div id="grid-container">
+            <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBN4no3plB1k8nYw0525z0xM9TO7zntnGbQ&s" alt="">
+                <h3>GMC Staff Manager</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, exercitationem labore beatae tempore molestias doloremque dolores quibusdam fuga sequi laborum debitis eligendi odio sed porro incidunt animi, ex cum. Veniam!</p>
+                <div class="project-btn"></div>
+                <button class="btn">Demo</button>
+                <button class="btn">Github</button>
+            </div>
+         </div>
+
+         <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBN4no3plB1k8nYw0525z0xM9TO7zntnGbQ&s" alt="">
+                <h3>GMC Staff Manager</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, exercitationem labore beatae tempore molestias doloremque dolores quibusdam fuga sequi laborum debitis eligendi odio sed porro incidunt animi, ex cum. Veniam!</p>
+                <div class="project-btn"></div>
+                <button class="btn">Demo</button>
+                <button class="btn">Github</button>
+            </div>
+         </div>
+
+         <div class="project-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaBN4no3plB1k8nYw0525z0xM9TO7zntnGbQ&s" alt="">
+                <h3>GMC Staff Manager</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, exercitationem labore beatae tempore molestias doloremque dolores quibusdam fuga sequi laborum debitis eligendi odio sed porro incidunt animi, ex cum. Veniam!</p>
+                <div class="project-btn"></div>
+                <button class="btn">Demo</button>
+                <button class="btn">Github</button>
+            </div>
+         </div>
     </section>
     <section id="resume">
         <h2>Resume</h2>
@@ -45,9 +79,9 @@
         <div>
             <h2>Contact Me</h2>
             <hr>
-            <p>Email: durupeter08@gmail.com</p>
-            <p>Phone Number: 08021651327</p>
-            <p>Address: Lagos, Nageria</p>
+            <p class="form-item">Email: durupeter08@gmail.com</p>
+            <p class="form-item">Phone Number: 08021651327</p>
+            <p class="form-item">Address: Lagos, Nageria</p>
         </div>
         <div>
             <form action="">
@@ -73,15 +107,6 @@
                     cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                    <input type="summit" value="send message">
+                    <input id="message-item" value="send message" class="btn">
                 </div>
-            </form>
-        </div>
-    </section>
-
-    </main>
-
-    <!-- footer part -->
-    <footer></footer>
-</body>
-</html>
+            </form>g
